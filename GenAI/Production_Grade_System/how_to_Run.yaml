@@ -1,0 +1,8 @@
+Build embeddings (RAG index):
+
+python scripts/build_embeddings.py --text_file docs.txt --source_name "docs"
+
+
+Ask a question:
+
+python -m src.app --question "What does docs say about X?"
