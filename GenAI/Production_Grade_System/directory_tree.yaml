@@ -1,0 +1,53 @@
+generative_ai_project/
+├─ config/
+│  ├─ model_config.yaml
+│  └─ logging_config.yaml
+├─ data/
+│  ├─ cache/.gitkeep
+│  ├─ embeddings/.gitkeep
+│  └─ vectordb/.gitkeep
+├─ src/
+│  ├─ __init__.py
+│  ├─ app.py
+│  ├─ core/
+│  │  ├─ __init__.py
+│  │  ├─ base_llm.py
+│  │  ├─ gpt_client.py
+│  │  ├─ claude_client.py
+│  │  ├─ local_llm.py
+│  │  └─ model_factory.py
+│  ├─ prompts/
+│  │  ├─ __init__.py
+│  │  ├─ templates.py
+│  │  └─ chain.py
+│  ├─ processing/
+│  │  ├─ __init__.py
+│  │  ├─ chunking.py
+│  │  ├─ tokenizer.py
+│  │  └─ preprocessor.py
+│  ├─ rag/
+│  │  ├─ __init__.py
+│  │  ├─ embedder.py
+│  │  ├─ indexer.py
+│  │  ├─ retriever.py
+│  │  └─ vector_store.py
+│  └─ inference/
+│     ├─ __init__.py
+│     ├─ inference_engine.py
+│     └─ response_parser.py
+├─ tests/
+│  ├─ unit/
+│  │  ├─ test_llm_clients.py
+│  │  └─ test_prompts.py
+│  └─ integration/
+│     ├─ test_api_integration.py
+│     └─ test_end_to_end.py
+├─ scripts/
+│  ├─ setup_env.sh
+│  ├─ run_tests.sh
+│  ├─ build_embeddings.py
+│  └─ cleanup.py
+├─ .gitignore
+├─ Dockerfile
+├─ docker-compose.yml
+└─ requirements.txt
