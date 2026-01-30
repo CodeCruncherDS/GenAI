@@ -10,3 +10,4 @@ List of Github Repos to be checke and learn
 5. https://github.com/openai/openai-knowledge-retrieval.git
 6. https://github.com/openai/openai-cookbook.git
 7. https://github.com/openai/openai-python.git
+8. https://guardrails.openai.com/
