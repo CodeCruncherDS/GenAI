@@ -1,6 +1,10 @@
 "use client";
 import { useState } from "react";
 import { ask } from "@/lib/api";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 export default function Chat() {
   const [project, setProject] = useState("default");
@@ -35,13 +39,42 @@ export default function Chat() {
         <div className="flex flex-col gap-3">
           {msgs.map((m, i) => (
             <div key={i} className={m.role === "user" ? "self-end max-w-[85%]" : "self-start max-w-[85%]"}>
-              <div className="rounded-lg border px-3 py-2 text-sm leading-relaxed">
-                <div className="mb-1 text-xs text-neutral-500">{m.role}</div>
-                <div className="whitespace-pre-wrap">{m.text}</div>
+              <div className={`rounded-lg border px-3 py-2 text-sm leading-relaxed ${m.role === "user" ? "bg-blue-50 border-blue-100" : "bg-white border-neutral-200"}`}>
+                <div className="mb-1 text-xs font-semibold uppercase tracking-wider text-neutral-400">{m.role}</div>
+                {m.role === "assistant" ? (
+                  <div className="markdown-body">
+                    <ReactMarkdown
+                      remarkPlugins={[remarkGfm]}
+                      components={{
+                        code({ node, inline, className, children, ...props }: any) {
+                          const match = /language-(\w+)/.exec(className || "");
+                          return !inline && match ? (
+                            <SyntaxHighlighter
+                              style={vscDarkPlus}
+                              language={match[1]}
+                              PreTag="div"
+                              {...props}
+                            >
+                              {String(children).replace(/\n$/, "")}
+                            </SyntaxHighlighter>
+                          ) : (
+                            <code className={className} {...props}>
+                              {children}
+                            </code>
+                          );
+                        },
+                      }}
+                    >
+                      {m.text}
+                    </ReactMarkdown>
+                  </div>
+                ) : (
+                  <div className="whitespace-pre-wrap">{m.text}</div>
+                )}
               </div>
             </div>
           ))}
-          {loading && <div className="text-sm text-neutral-500">Thinking…</div>}
+          {loading && <div className="text-sm text-neutral-500 animate-pulse">Thinking…</div>}
         </div>
       </div>
 
@@ -50,10 +83,10 @@ export default function Chat() {
           value={q}
           onChange={(e) => setQ(e.target.value)}
           onKeyDown={(e) => (e.key === "Enter" ? onSend() : null)}
-          className="flex-1 rounded border px-3 py-2 text-sm"
+          className="flex-1 rounded border px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-100"
           placeholder="Ask about endpoints, params, auth, examples…"
         />
-        <button onClick={onSend} className="rounded border px-3 py-2 text-sm">Send</button>
+        <button onClick={onSend} className="rounded bg-black px-4 py-2 text-sm text-white hover:bg-neutral-800">Send</button>
       </div>
     </div>
   );
