@@ -1,18 +1,36 @@
 {
-  "name": "Avery Chen",
-  "title": "Senior Frontend Engineer",
-  "summary": "I design and deliver resilient front-end systems that balance product clarity, technical rigor, and measurable business impact.",
-  "location": "Seattle, WA · Remote-friendly",
-  "email": "hello@averychen.dev",
-  "github": "https://github.com/averychen",
-  "linkedin": "https://www.linkedin.com/in/averychen",
-  "footerNote": "Focused on high-signal product experiences and thoughtful system design.",
+  "name": "Devesh Singh",
+  "title": "AI Engineer / MLOps Engineer",
+  "summary": "I design and operate production-grade AI systems with a focus on scalable MLOps, reliable data pipelines, and measurable business impact across analytics, forecasting, and optimization use cases.",
+  "location": "Gurugram, India · Remote-friendly",
+  "email": "deveshsingh226@gmail.com",
+  "github": "https://github.com/CodeCruncherDS",
+  "linkedin": "https://www.linkedin.com/in/iamdeveshsingh/",
+  "footerNote": "Focused on production AI systems, governance, and long-term operational reliability.",
   "nav": [
-    { "label": "Experience", "href": "/experience" },
-    { "label": "Projects", "href": "/projects" },
-    { "label": "Skills", "href": "/skills" },
-    { "label": "Tools", "href": "/tools" },
-    { "label": "Resume", "href": "/resume" },
-    { "label": "Contact", "href": "/contact" }
+    {
+      "label": "Experience",
+      "href": "/experience"
+    },
+    {
+      "label": "Projects",
+      "href": "/projects"
+    },
+    {
+      "label": "Skills",
+      "href": "/skills"
+    },
+    {
+      "label": "Tools",
+      "href": "/tools"
+    },
+    {
+      "label": "Resume",
+      "href": "/resume"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact"
+    }
   ]
 }

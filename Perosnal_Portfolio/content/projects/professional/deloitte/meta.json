@@ -1,0 +1,24 @@
+{
+  "name": "Production ML Solutions & Governance Framework",
+  "summary": "Client-facing AI delivery portfolio implementing production ML pipelines, governance standards, and operational dashboards for healthcare and FMCG clients.",
+  "tags": [
+    "MLOps Governance",
+    "Databricks",
+    "MLflow",
+    "Feature Store"
+  ],
+  "timeline": "2021 — 2024",
+  "role": "Consultant – AI & MLOps",
+  "stack": [
+    "Python",
+    "Databricks",
+    "MLflow",
+    "SQL",
+    "CI/CD"
+  ],
+  "impact": [
+    "Standardized experiment tracking and model deployment patterns across multiple engagements.",
+    "Operationalized end-to-end pipelines that improved reproducibility and auditability.",
+    "Mentored teams on scalable MLOps practices, reducing onboarding friction and improving quality."
+  ]
+}

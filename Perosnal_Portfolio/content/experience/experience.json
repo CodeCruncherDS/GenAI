@@ -1,34 +1,56 @@
 [
   {
-    "company": "Northwind Labs",
-    "role": "Senior Frontend Engineer",
-    "time": "2022 — Present",
-    "location": "Seattle, WA",
+    "company": "Fractal Analytics",
+    "role": "AI Engineer",
+    "time": "Apr 2024 — Present",
+    "location": "Gurugram, India",
     "responsibilities": [
-      "Owned the frontend architecture for a multi-tenant analytics platform serving 120k+ monthly active users.",
-      "Led cross-functional delivery for a design system migration with zero regression rollout.",
-      "Established performance budgets and introduced release checklists tied to Lighthouse and Web Vitals."
+      "Designed and implemented end-to-end AI/ML pipelines on GCP Vertex AI for marketing and revenue growth analytics.",
+      "Orchestrated CI/CD-driven ML deployments with controlled promotion across QA and production environments.",
+      "Integrated data science models into governed MLOps frameworks for forecasting and campaign optimization.",
+      "Led model monitoring, data quality checks, and monthly performance evaluations to ensure production stability.",
+      "Implemented event-driven alerting using Pub/Sub and SendGrid for pipeline execution status."
     ],
     "ownership": [
-      "Decision-maker on core UI infrastructure, including routing, data loading patterns, and component composition.",
-      "Authored the migration plan from legacy SPA to Next.js App Router, including edge rendering strategy.",
-      "Partnered with product leadership to re-scope quarterly roadmap with engineering constraints." 
+      "Owned cross-market pipeline execution logic for region-specific campaign requirements under the eRGM program.",
+      "Acted as primary code reviewer, improving Python code quality, performance, and maintainability.",
+      "Defined MLOps standards for deployment, monitoring, and rollback across multi-country pipelines."
     ]
   },
   {
-    "company": "Orchid Commerce",
-    "role": "Frontend Engineer",
-    "time": "2019 — 2022",
-    "location": "Remote",
+    "company": "Deloitte USI",
+    "role": "Consultant – AI & MLOps",
+    "time": "Mar 2021 — Apr 2024",
+    "location": "Gurugram, India",
     "responsibilities": [
-      "Built modular storefront experiences for enterprise retail clients.",
-      "Shipped experiment tooling that reduced time-to-launch for new merchandising campaigns.",
-      "Collaborated with design to define interaction patterns for the checkout funnel."
+      "Designed and delivered production ML solutions for healthcare and FMCG clients.",
+      "Built end-to-end AI pipelines covering ingestion, transformation, training, deployment, and monitoring.",
+      "Led MLOps governance ensuring reproducibility, auditability, and operational efficiency.",
+      "Collaborated with marketing, analytics, and engineering teams to operationalize model outputs.",
+      "Mentored junior data scientists and engineers on ML pipeline best practices."
     ],
     "ownership": [
-      "Owned the checkout frontend and collaborated on conversion optimization.",
-      "Created documentation that standardized component testing across teams.",
-      "Introduced observability hooks for UI performance and error reporting."
+      "Primary client-facing owner translating business objectives into deployable AI architectures.",
+      "Led design reviews for ML systems with focus on scalability, reliability, and cost efficiency.",
+      "Standardized MLflow-based experiment tracking and deployment patterns across engagements."
+    ]
+  },
+  {
+    "company": "GlobalLogic",
+    "role": "Analyst – Machine Learning",
+    "time": "Jul 2018 — Jan 2021",
+    "location": "Gurugram, India",
+    "responsibilities": [
+      "Developed and managed ML pipelines on Dataiku for financial and insurance analytics.",
+      "Deployed and optimized machine learning models to improve robustness and production performance.",
+      "Designed A/B testing frameworks to validate model quality and business impact.",
+      "Performed statistical analysis on large-scale claims and insurance datasets.",
+      "Supported production MLOps operations ensuring SLA adherence."
+    ],
+    "ownership": [
+      "Owned model experimentation and validation workflows on the Dataiku platform.",
+      "Acted as liaison between technical teams and business stakeholders.",
+      "Maintained CI/CD hygiene and production stability for ML workflows."
     ]
   }
 ]

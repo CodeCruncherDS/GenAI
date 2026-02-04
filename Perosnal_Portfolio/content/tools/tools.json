@@ -1,38 +1,44 @@
 [
   {
-    "group": "Core Stack",
+    "group": "Core AI & ML",
     "items": [
-      "Next.js",
-      "React",
-      "TypeScript",
-      "Tailwind CSS"
+      "Python",
+      "SQL",
+      "GCP",
+      "Vertex AI",
+      "Databricks",
+      "MLflow"
     ]
   },
   {
-    "group": "Testing & Quality",
+    "group": "MLOps & Infrastructure",
     "items": [
-      "Playwright",
-      "Jest",
-      "Testing Library",
-      "Lighthouse"
-    ]
-  },
-  {
-    "group": "Design & Collaboration",
-    "items": [
-      "Figma",
-      "Notion",
-      "Linear",
-      "Miro"
-    ]
-  },
-  {
-    "group": "Infrastructure",
-    "items": [
-      "Vercel",
+      "Kubeflow",
+      "Docker",
+      "Kubernetes",
       "GitHub Actions",
-      "Sentry",
-      "LaunchDarkly"
+      "Cloud Run",
+      "Pub/Sub",
+      "SendGrid"
+    ]
+  },
+  {
+    "group": "LLM Platforms",
+    "items": [
+      "OpenAI API",
+      "ChatGPT Platform",
+      "OpenAI Codex",
+      "Ollama",
+      "Open-source LLMs"
+    ]
+  },
+  {
+    "group": "Agentic AI & RAG",
+    "items": [
+      "Multi-agent Systems",
+      "RAG",
+      "Vector Databases",
+      "Embeddings"
     ]
   }
 ]

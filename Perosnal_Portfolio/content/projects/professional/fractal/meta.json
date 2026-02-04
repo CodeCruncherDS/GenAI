@@ -1,0 +1,25 @@
+{
+  "name": "Enterprise AI/ML Pipeline Platform",
+  "summary": "End-to-end AI/ML pipeline suite powering forecasting, marketing analytics, and campaign systems across multi-country environments.",
+  "tags": [
+    "MLOps",
+    "Vertex AI",
+    "GCP",
+    "CI/CD",
+    "Monitoring"
+  ],
+  "timeline": "2024 — Present",
+  "role": "AI Engineer",
+  "stack": [
+    "Python",
+    "GCP Vertex AI",
+    "GitHub Actions",
+    "Pub/Sub",
+    "SendGrid"
+  ],
+  "impact": [
+    "Enabled scalable production deployments with CI/CD promotion workflows across QA and production.",
+    "Improved model reliability and observability by implementing systematic monitoring and alerting.",
+    "Reduced rollout failures through governed pipeline standards and cross-market execution logic."
+  ]
+}

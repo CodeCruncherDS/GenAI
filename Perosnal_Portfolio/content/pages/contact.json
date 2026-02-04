@@ -1,14 +1,14 @@
 {
   "title": "Contact",
-  "intro": "Open to collaboration, product design conversations, and advisory work.",
-  "emailLabel": "Email",
-  "githubLabel": "GitHub",
-  "linkedinLabel": "LinkedIn",
-  "formTitle": "Send a message",
-  "formDescription": "Minimal server action form. No data is stored; submissions log server-side.",
-  "submitLabel": "Send Message",
-  "nameLabel": "Name",
+  "intro": "Available for AI engineering leadership, MLOps architecture, and consulting engagements.",
+  "emailLabel": "deveshsingh226@gmail.com",
+  "githubLabel": "https://github.com/CodeCruncherDS",
+  "linkedinLabel": "https://www.linkedin.com/in/iamdeveshsingh/",
+  "formTitle": "Let's have a conversation!",
+  "formDescription": "Direct server-side message handling. No persistence. Logged for response tracking.",
+  "submitLabel": "Send",
+  "nameLabel": "Your Name",
   "messageLabel": "Message",
-  "successMessage": "Thanks for reaching out. I will get back to you soon.",
-  "errorMessage": "Please fill out every field."
+  "successMessage": "Message received. Response will follow.",
+  "errorMessage": "All fields are required."
 }

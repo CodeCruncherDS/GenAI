@@ -1,11 +1,11 @@
 {
   "heroTag": "Personal Portfolio",
   "focusTitle": "Focus",
-  "focusBody": "I specialize in high-signal front-end delivery: clear UX flows, resilient architectures, and systems that scale without sacrificing speed or quality.",
+  "focusBody": "I build scalable, production-ready AI and ML systems that bridge data science and engineering. My work emphasizes repeatable MLOps practices, robust pipeline design, and measurable business impact in analytics and forecasting domains.",
   "currentlyTitle": "Currently",
   "currentlyItems": [
-    "Leading frontend delivery for complex web platforms.",
-    "Designing reusable systems for cross-functional product teams.",
-    "Building personal tooling that reduces cognitive load and improves iteration speed."
+    "Designing and operating end-to-end AI/ML pipelines on GCP, Databricks, and Vertex AI.",
+    "Standardizing governance, monitoring, and deployment frameworks for reliable production delivery.",
+    "Collaborating with cross-functional teams to operationalize models with performance visibility and alerting."
   ]
 }
