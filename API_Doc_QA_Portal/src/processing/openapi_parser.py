@@ -3,17 +3,23 @@ import json
 from typing import Tuple, List, Dict, Any
 import yaml
 
-def _as_text(d: dict) -> str:
-    parts: List[str] = []
+def _parse_openapi_endpoints(d: dict, filename: str) -> Tuple[List[str], List[Dict[str, Any]]]:
+    chunks: List[str] = []
+    metas: List[Dict[str, Any]] = []
+
     info = d.get("info", {}) or {}
     title = info.get("title", "API")
     version = info.get("version", "")
-    parts.append(f"{title} {version}".strip())
-
+    
+    # Global Info Chunk
+    global_info = f"API: {title} {version}\n"
     servers = d.get("servers", []) or []
     if servers:
-        parts.append("Servers:\n" + "\n".join([s.get("url", "") for s in servers if s.get("url")]))
+        global_info += "Servers:\n" + "\n".join([s.get("url", "") for s in servers if s.get("url")])
+    chunks.append(global_info)
+    metas.append({"source": filename, "type": "openapi", "section": "info"})
 
+    # Paths
     paths = d.get("paths", {}) or {}
     for path, methods in paths.items():
         if not isinstance(methods, dict):
@@ -21,15 +27,19 @@ def _as_text(d: dict) -> str:
         for m, spec in methods.items():
             if not isinstance(spec, dict):
                 continue
+            
+            # Extract Details
             op_id = spec.get("operationId", "")
             summary = spec.get("summary", "")
             desc = spec.get("description", "")
-            parts.append(
+            
+            # Construct Content
+            content = (
                 f"Endpoint: {m.upper()} {path}\n"
                 f"operationId: {op_id}\n"
                 f"summary: {summary}\n"
-                f"description: {desc}".strip()
-            )
+                f"description: {desc}\n"
+            ).strip()
 
             params = spec.get("parameters", []) or []
             if params:
@@ -42,17 +52,26 @@ def _as_text(d: dict) -> str:
                         f"- {p.get('name','')} in={p.get('in','')} required={p.get('required',False)} "
                         f"type={schema.get('type','')} desc={p.get('description','')}"
                     )
-                parts.append("Parameters:\n" + "\n".join(p_lines))
+                content += "\nParameters:\n" + "\n".join(p_lines)
 
             rb = (spec.get("requestBody") or {})
             if rb:
-                parts.append("RequestBody:\n" + json.dumps(rb, ensure_ascii=False)[:4000])
+                content += "\nRequestBody:\n" + json.dumps(rb, ensure_ascii=False)[:3000]
 
             responses = spec.get("responses", {}) or {}
             if responses:
-                parts.append("Responses:\n" + json.dumps(responses, ensure_ascii=False)[:4000])
+                content += "\nResponses:\n" + json.dumps(responses, ensure_ascii=False)[:3000]
 
-    return "\n\n---\n\n".join([p for p in parts if p])
+            chunks.append(content)
+            metas.append({
+                "source": filename,
+                "type": "openapi",
+                "method": m.upper(),
+                "path": path,
+                "operationId": op_id
+            })
+
+    return chunks, metas
 
 def parse_openapi_or_markdown(raw: bytes, filename: str) -> Tuple[List[str], List[Dict[str, Any]]]:
     name = (filename or "upload").lower()
@@ -63,10 +82,10 @@ def parse_openapi_or_markdown(raw: bytes, filename: str) -> Tuple[List[str], Lis
 
     if name.endswith(".json"):
         d = json.loads(raw.decode("utf-8", errors="ignore"))
-        return [_as_text(d)], [{"source": filename, "type": "openapi"}]
+        return _parse_openapi_endpoints(d, filename)
 
     if name.endswith(".yaml") or name.endswith(".yml"):
         d = yaml.safe_load(raw.decode("utf-8", errors="ignore"))
-        return [_as_text(d)], [{"source": filename, "type": "openapi"}]
+        return _parse_openapi_endpoints(d, filename)
 
     raise ValueError("Unsupported file type. Upload .json/.yaml/.yml/.md/.txt")

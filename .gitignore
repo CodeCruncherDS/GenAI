@@ -1,0 +1,36 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environment Variables
+.env
+.env.local
+
+# Mac / OS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Node.js / Frontend
+node_modules/
+npm-debug.log
+yarn-error.log
+.next/
+out/
+build/
+dist/
+.vercel
+
+# Project Data (Local Vector DB & Cache)
+data/
+cache/
+embeddings/
+vectordb/
+config/local_*.yaml

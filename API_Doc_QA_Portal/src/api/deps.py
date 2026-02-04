@@ -1,3 +1,4 @@
+from typing import Optional
 import logging.config
 from functools import lru_cache
 from pathlib import Path
@@ -9,7 +10,7 @@ CONFIG_PATH = BASE_DIR / "config" / "model_config.yaml"
 LOGGING_PATH = BASE_DIR / "config" / "logging_config.yaml"
 
 
-def _resolve_path(value: str | None) -> str | None:
+def _resolve_path(value: Optional[str]) -> Optional[str]:
     if not value:
         return value
     path = BASE_DIR / value

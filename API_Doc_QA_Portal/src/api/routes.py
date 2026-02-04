@@ -37,7 +37,18 @@ async def ingest(project: str = Form(default="default"), file: UploadFile = File
     rag = cfg["rag"]
     collection_name = f"docs_{project}"
 
+    # Read content
     raw = await file.read()
+
+    # SAVE THE FILE for frontend retrieval
+    # Ensure cache dir exists
+    cache_dir = cfg["paths"].get("cache_dir", "data/cache")
+    import os
+    os.makedirs(cache_dir, exist_ok=True)
+    file_path = os.path.join(cache_dir, f"{project}_{file.filename}")
+    with open(file_path, "wb") as f:
+        f.write(raw)
+
     try:
         text_blobs, metas = parse_openapi_or_markdown(raw, filename=file.filename)
     except Exception as e:
@@ -49,3 +60,14 @@ async def ingest(project: str = Form(default="default"), file: UploadFile = File
     n = indexer.index_documents(text_blobs, metadatas=metas)
 
     return IngestResponse(indexed_chunks=n, project=project)
+
+@router.get("/spec/{project}/{filename}")
+def get_spec(project: str, filename: str):
+    import os
+    from fastapi.responses import FileResponse
+    cfg = get_config()
+    cache_dir = cfg["paths"].get("cache_dir", "data/cache")
+    file_path = os.path.join(cache_dir, f"{project}_{filename}")
+    if not os.path.exists(file_path):
+        raise HTTPException(status_code=404, detail="Spec file not found")
+    return FileResponse(file_path)
