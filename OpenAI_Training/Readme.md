@@ -1,0 +1,1 @@
+Open AI Traning : 29th Jan 2026

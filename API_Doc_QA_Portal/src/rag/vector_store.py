@@ -1,9 +1,13 @@
-from typing import List, Dict, Any, Optional
+from pathlib import Path
+from typing import Any, Dict, List, Optional
+
 import chromadb
 from chromadb.config import Settings
 
+
 class VectorStore:
     def __init__(self, persist_path: str, collection_name: str):
+        Path(persist_path).mkdir(parents=True, exist_ok=True)
         self.client = chromadb.PersistentClient(
             path=persist_path,
             settings=Settings(anonymized_telemetry=False),
