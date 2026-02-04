@@ -1,0 +1,14 @@
+{
+  "name": "Signal Weave",
+  "summary": "Personal knowledge signal tracker that surfaces high-leverage insights.",
+  "tags": ["Personal Tooling", "Visualization", "RSC"],
+  "timeline": "2024",
+  "role": "Creator",
+  "stack": ["Next.js", "TypeScript", "Tailwind CSS"],
+  "impact": [
+    "Reduced weekly review time by 30% through surfaced patterns.",
+    "Automated tagging and clustering for recurring themes.",
+    "Improved personal decision tracking across projects."
+  ],
+  "interactiveDemo": "signal-meter"
+}

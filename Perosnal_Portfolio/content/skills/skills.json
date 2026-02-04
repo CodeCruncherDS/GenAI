@@ -1,0 +1,38 @@
+[
+  {
+    "group": "Product Delivery",
+    "items": [
+      "Feature discovery and scope framing",
+      "Design system stewardship",
+      "Experiment design and iteration cycles",
+      "Cross-functional planning and roadmap alignment"
+    ]
+  },
+  {
+    "group": "Frontend Architecture",
+    "items": [
+      "Next.js App Router and React Server Components",
+      "Designing resilient data loading patterns",
+      "Performance budgets and observability",
+      "Component composition and API design"
+    ]
+  },
+  {
+    "group": "Engineering Leadership",
+    "items": [
+      "Mentoring and leveling support",
+      "Technical decision logs and ADRs",
+      "Release risk assessment",
+      "Stakeholder communication"
+    ]
+  },
+  {
+    "group": "Quality & Testing",
+    "items": [
+      "E2E test strategy and execution",
+      "Accessibility auditing",
+      "Storybook-driven component review",
+      "Regression prevention workflows"
+    ]
+  }
+]

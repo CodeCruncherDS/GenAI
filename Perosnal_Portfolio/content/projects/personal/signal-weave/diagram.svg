@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 180" role="img" aria-label="Signal Weave architecture">
+  <rect x="20" y="40" width="160" height="100" rx="16" fill="#f5f0ea" stroke="#cbd5e1"/>
+  <rect x="220" y="40" width="160" height="100" rx="16" fill="#f5f0ea" stroke="#cbd5e1"/>
+  <rect x="420" y="40" width="160" height="100" rx="16" fill="#f5f0ea" stroke="#cbd5e1"/>
+  <text x="100" y="90" font-size="14" text-anchor="middle" fill="#334155">Ingestion</text>
+  <text x="300" y="90" font-size="14" text-anchor="middle" fill="#334155">Scoring</text>
+  <text x="500" y="90" font-size="14" text-anchor="middle" fill="#334155">Insights UI</text>
+  <path d="M180 90h40" stroke="#0f766e" stroke-width="3" stroke-linecap="round"/>
+  <path d="M380 90h40" stroke="#0f766e" stroke-width="3" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,14 @@
+{
+  "title": "Contact",
+  "intro": "Open to collaboration, product design conversations, and advisory work.",
+  "emailLabel": "Email",
+  "githubLabel": "GitHub",
+  "linkedinLabel": "LinkedIn",
+  "formTitle": "Send a message",
+  "formDescription": "Minimal server action form. No data is stored; submissions log server-side.",
+  "submitLabel": "Send Message",
+  "nameLabel": "Name",
+  "messageLabel": "Message",
+  "successMessage": "Thanks for reaching out. I will get back to you soon.",
+  "errorMessage": "Please fill out every field."
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Decision Canvas",
+  "summary": "A structured decision log for product tradeoffs and experiment outcomes.",
+  "tags": ["Workflow", "Decision Log", "Process"],
+  "timeline": "2023",
+  "role": "Creator",
+  "stack": ["TypeScript", "React", "Vite"],
+  "impact": [
+    "Standardized decision reviews across three teams.",
+    "Improved handoff clarity for leadership updates.",
+    "Created a reusable format for post-mortem analysis."
+  ],
+  "interactiveDemo": "decision-timer"
+}

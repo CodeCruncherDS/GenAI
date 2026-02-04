@@ -1,0 +1,18 @@
+{
+  "name": "Avery Chen",
+  "title": "Senior Frontend Engineer",
+  "summary": "I design and deliver resilient front-end systems that balance product clarity, technical rigor, and measurable business impact.",
+  "location": "Seattle, WA · Remote-friendly",
+  "email": "hello@averychen.dev",
+  "github": "https://github.com/averychen",
+  "linkedin": "https://www.linkedin.com/in/averychen",
+  "footerNote": "Focused on high-signal product experiences and thoughtful system design.",
+  "nav": [
+    { "label": "Experience", "href": "/experience" },
+    { "label": "Projects", "href": "/projects" },
+    { "label": "Skills", "href": "/skills" },
+    { "label": "Tools", "href": "/tools" },
+    { "label": "Resume", "href": "/resume" },
+    { "label": "Contact", "href": "/contact" }
+  ]
+}

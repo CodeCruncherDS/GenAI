@@ -1,0 +1,38 @@
+[
+  {
+    "group": "Core Stack",
+    "items": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS"
+    ]
+  },
+  {
+    "group": "Testing & Quality",
+    "items": [
+      "Playwright",
+      "Jest",
+      "Testing Library",
+      "Lighthouse"
+    ]
+  },
+  {
+    "group": "Design & Collaboration",
+    "items": [
+      "Figma",
+      "Notion",
+      "Linear",
+      "Miro"
+    ]
+  },
+  {
+    "group": "Infrastructure",
+    "items": [
+      "Vercel",
+      "GitHub Actions",
+      "Sentry",
+      "LaunchDarkly"
+    ]
+  }
+]

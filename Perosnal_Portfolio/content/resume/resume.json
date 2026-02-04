@@ -1,0 +1,49 @@
+{
+  "name": "Avery Chen",
+  "title": "Senior Frontend Engineer",
+  "summary": "Frontend engineer focused on shipping high-signal product experiences with resilient UI architecture.",
+  "contact": {
+    "email": "hello@averychen.dev",
+    "location": "Seattle, WA",
+    "github": "github.com/averychen",
+    "linkedin": "linkedin.com/in/averychen"
+  },
+  "experience": [
+    {
+      "company": "Northwind Labs",
+      "role": "Senior Frontend Engineer",
+      "time": "2022 — Present",
+      "highlights": [
+        "Re-architected the customer analytics dashboard, reducing TTI by 38% and improving retention of key workflows.",
+        "Led the adoption of App Router patterns across multiple teams with shared component libraries.",
+        "Designed a rollout framework for complex UI migrations with zero downtime."
+      ]
+    },
+    {
+      "company": "Orchid Commerce",
+      "role": "Frontend Engineer",
+      "time": "2019 — 2022",
+      "highlights": [
+        "Delivered modular storefront components used by 20+ enterprise retailers.",
+        "Built experimentation tools for merchandising workflows that reduced launch time by 45%.",
+        "Implemented accessibility and regression testing standards for checkout flows."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Washington",
+      "degree": "B.S. Human-Centered Design & Engineering",
+      "time": "2015 — 2019"
+    }
+  ],
+  "skills": [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+    "Design Systems",
+    "Performance Optimization",
+    "Product Strategy"
+  ]
+}

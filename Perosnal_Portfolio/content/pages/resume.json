@@ -1,0 +1,9 @@
+{
+  "title": "Resume",
+  "intro": "Structured resume content rendered directly from JSON for consistency across formats.",
+  "downloadLabel": "Download PDF (placeholder)",
+  "contactTitle": "Contact",
+  "experienceTitle": "Experience",
+  "educationTitle": "Education",
+  "skillsTitle": "Skills"
+}

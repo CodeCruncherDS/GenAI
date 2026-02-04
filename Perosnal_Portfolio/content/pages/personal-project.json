@@ -1,0 +1,11 @@
+{
+  "readmeTitle": "README",
+  "architectureTitle": "Architecture Diagram",
+  "demoTitle": "Interactive Demo",
+  "decisionLogTitle": "Decision Log",
+  "timelineTitle": "Timeline",
+  "roleTitle": "Role",
+  "stackTitle": "Stack",
+  "impactTitle": "Impact",
+  "noDemoMessage": "No interactive demo configured for this project."
+}

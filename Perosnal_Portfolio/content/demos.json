@@ -1,0 +1,15 @@
+{
+  "signal-meter": {
+    "title": "Signal Meter",
+    "highLabel": "High",
+    "balancedLabel": "Balanced",
+    "lowLabel": "Low",
+    "caption": "Drag to simulate the signal density algorithm."
+  },
+  "decision-timer": {
+    "title": "Decision Timer",
+    "resetLabel": "Reset",
+    "options": [15, 25, 45],
+    "caption": "Quickly test time-boxed decisions used in the project."
+  }
+}

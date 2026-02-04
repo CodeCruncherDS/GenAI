@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-sand-50 text-ink-800 font-body antialiased;
+}
+
+section {
+  scroll-margin-top: 6rem;
+}
+
+.prose {
+  @apply text-ink-700;
+}
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4 {
+  @apply font-display text-ink-900;
+}
