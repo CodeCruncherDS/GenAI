@@ -1,0 +1,44 @@
+[
+  {
+    "group": "Core AI & ML",
+    "items": [
+      "Python",
+      "SQL",
+      "GCP",
+      "Vertex AI",
+      "Databricks",
+      "MLflow"
+    ]
+  },
+  {
+    "group": "MLOps & Infrastructure",
+    "items": [
+      "Kubeflow",
+      "Docker",
+      "Kubernetes",
+      "GitHub Actions",
+      "Cloud Run",
+      "Pub/Sub",
+      "SendGrid"
+    ]
+  },
+  {
+    "group": "LLM Platforms",
+    "items": [
+      "OpenAI API",
+      "ChatGPT Platform",
+      "OpenAI Codex",
+      "Ollama",
+      "Open-source LLMs"
+    ]
+  },
+  {
+    "group": "Agentic AI & RAG",
+    "items": [
+      "Multi-agent Systems",
+      "RAG",
+      "Vector Databases",
+      "Embeddings"
+    ]
+  }
+]

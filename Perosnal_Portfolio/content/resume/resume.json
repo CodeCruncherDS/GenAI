@@ -1,0 +1,71 @@
+{
+  "name": "Devesh Singh",
+  "title": "AI Engineer / MLOps Engineer",
+  "summary": "AI engineer specializing in production-grade ML systems, scalable MLOps architecture, and multi-market analytics platforms. Focused on reliability, governance, and measurable business impact across forecasting, optimization, and marketing AI use cases.",
+  "contact": {
+    "email": "deveshsingh226@gmail.com",
+    "location": "Gurugram, India",
+    "github": "https://github.com/CodeCruncherDS",
+    "linkedin": "https://www.linkedin.com/in/iamdeveshsingh/"
+  },
+  "experience": [
+    {
+      "company": "Fractal Analytics",
+      "role": "AI Engineer",
+      "time": "Apr 2024 — Present",
+      "highlights": [
+        "Designed and operated end-to-end AI/ML pipelines on GCP Vertex AI supporting forecasting and marketing analytics.",
+        "Implemented CI/CD-driven deployment workflows with controlled QA-to-production promotion across regions.",
+        "Built monitoring, alerting, and performance evaluation layers to ensure pipeline stability and data reliability."
+      ]
+    },
+    {
+      "company": "Deloitte USI",
+      "role": "Consultant – AI & MLOps",
+      "time": "Mar 2021 — Apr 2024",
+      "highlights": [
+        "Delivered production ML solutions for healthcare and FMCG clients with full lifecycle ownership.",
+        "Established MLOps governance frameworks improving reproducibility, auditability, and operational efficiency.",
+        "Acted as client-facing technical lead translating business objectives into scalable AI architectures."
+      ]
+    },
+    {
+      "company": "GlobalLogic",
+      "role": "Analyst – Machine Learning",
+      "time": "Jul 2018 — Jan 2021",
+      "highlights": [
+        "Developed and maintained ML pipelines on Dataiku for financial and insurance analytics.",
+        "Designed A/B testing frameworks to validate model quality and business impact.",
+        "Supported production ML systems with strong SLA adherence and operational rigor."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Invertis University",
+      "degree": "B.Tech in Computer Science Engineering",
+      "time": "2014 — 2018"
+    },
+    {
+      "institution": "Jigsaw Academy (in collaboration with University of Chicago)",
+      "degree": "Post Graduate Program in Data Science and Machine Learning",
+      "time": "2020"
+    }
+  ],
+  "skills": [
+    "Python",
+    "SQL",
+    "GCP",
+    "Vertex AI",
+    "Databricks",
+    "MLflow",
+    "Kubeflow",
+    "CI/CD",
+    "Docker",
+    "Kubernetes",
+    "MLOps Architecture",
+    "Model Monitoring",
+    "Data & Model Drift Detection",
+    "Production ML Systems"
+  ]
+}

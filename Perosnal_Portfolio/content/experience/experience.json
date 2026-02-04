@@ -1,0 +1,56 @@
+[
+  {
+    "company": "Fractal Analytics",
+    "role": "AI Engineer",
+    "time": "Apr 2024 — Present",
+    "location": "Gurugram, India",
+    "responsibilities": [
+      "Designed and implemented end-to-end AI/ML pipelines on GCP Vertex AI for marketing and revenue growth analytics.",
+      "Orchestrated CI/CD-driven ML deployments with controlled promotion across QA and production environments.",
+      "Integrated data science models into governed MLOps frameworks for forecasting and campaign optimization.",
+      "Led model monitoring, data quality checks, and monthly performance evaluations to ensure production stability.",
+      "Implemented event-driven alerting using Pub/Sub and SendGrid for pipeline execution status."
+    ],
+    "ownership": [
+      "Owned cross-market pipeline execution logic for region-specific campaign requirements under the eRGM program.",
+      "Acted as primary code reviewer, improving Python code quality, performance, and maintainability.",
+      "Defined MLOps standards for deployment, monitoring, and rollback across multi-country pipelines."
+    ]
+  },
+  {
+    "company": "Deloitte USI",
+    "role": "Consultant – AI & MLOps",
+    "time": "Mar 2021 — Apr 2024",
+    "location": "Gurugram, India",
+    "responsibilities": [
+      "Designed and delivered production ML solutions for healthcare and FMCG clients.",
+      "Built end-to-end AI pipelines covering ingestion, transformation, training, deployment, and monitoring.",
+      "Led MLOps governance ensuring reproducibility, auditability, and operational efficiency.",
+      "Collaborated with marketing, analytics, and engineering teams to operationalize model outputs.",
+      "Mentored junior data scientists and engineers on ML pipeline best practices."
+    ],
+    "ownership": [
+      "Primary client-facing owner translating business objectives into deployable AI architectures.",
+      "Led design reviews for ML systems with focus on scalability, reliability, and cost efficiency.",
+      "Standardized MLflow-based experiment tracking and deployment patterns across engagements."
+    ]
+  },
+  {
+    "company": "GlobalLogic",
+    "role": "Analyst – Machine Learning",
+    "time": "Jul 2018 — Jan 2021",
+    "location": "Gurugram, India",
+    "responsibilities": [
+      "Developed and managed ML pipelines on Dataiku for financial and insurance analytics.",
+      "Deployed and optimized machine learning models to improve robustness and production performance.",
+      "Designed A/B testing frameworks to validate model quality and business impact.",
+      "Performed statistical analysis on large-scale claims and insurance datasets.",
+      "Supported production MLOps operations ensuring SLA adherence."
+    ],
+    "ownership": [
+      "Owned model experimentation and validation workflows on the Dataiku platform.",
+      "Acted as liaison between technical teams and business stakeholders.",
+      "Maintained CI/CD hygiene and production stability for ML workflows."
+    ]
+  }
+]

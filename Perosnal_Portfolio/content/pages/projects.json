@@ -1,0 +1,10 @@
+{
+  "title": "Projects",
+  "intro": "A split view of professional case studies and personal experiments. Professional work is summarized with outcomes; personal projects include architecture notes and decision logs.",
+  "professionalTitle": "Professional Projects",
+  "professionalBlurb": "Selected case studies from client and in-house delivery work.",
+  "professionalCta": "View professional case studies",
+  "personalTitle": "Personal Projects",
+  "personalBlurb": "Interactive, self-directed builds with full technical breakdowns.",
+  "personalCta": "Explore personal projects"
+}

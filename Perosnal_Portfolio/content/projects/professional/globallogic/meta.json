@@ -1,0 +1,22 @@
+{
+    "name": "ML Analytics & Production Support Systems",
+    "summary": "Machine learning pipelines and analytics infrastructure for financial and insurance datasets powering insights and production performance.",
+    "tags": [
+        "Dataiku",
+        "Statistical Modelling",
+        "A/B Testing",
+        "SLA"
+    ],
+    "timeline": "2018 — 2021",
+    "role": "Analyst – Machine Learning",
+    "stack": [
+        "Dataiku",
+        "Python",
+        "SQL"
+    ],
+    "impact": [
+        "Improved production model performance and robustness through iterative optimization.",
+        "Designed A/B testing frameworks that validated model quality and business impact.",
+        "Maintained high SLA adherence through proactive production support and CI/CD hygiene."
+    ]
+}

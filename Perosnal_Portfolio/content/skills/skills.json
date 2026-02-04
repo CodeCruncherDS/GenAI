@@ -1,0 +1,75 @@
+[
+  {
+    "group": "Core AI & MLOps Stack",
+    "items": [
+      "Python",
+      "SQL",
+      "GCP",
+      "Vertex AI",
+      "Databricks",
+      "MLflow",
+      "Kubeflow",
+      "Docker",
+      "Kubernetes",
+      "CI/CD (GitHub Actions)"
+    ]
+  },
+  {
+    "group": "Data Engineering & Model Operations",
+    "items": [
+      "End-to-end ML pipeline orchestration",
+      "Model training, deployment, and serving",
+      "Model monitoring and performance evaluation",
+      "Data quality checks and drift detection",
+      "Feature Store integration"
+    ]
+  },
+  {
+    "group": "Cloud & Production Infrastructure",
+    "items": [
+      "Google Cloud Platform (GCP)",
+      "Vertex AI Pipelines",
+      "Cloud Run",
+      "Pub/Sub",
+      "SendGrid",
+      "Environment-based deployment strategies"
+    ]
+  },
+  {
+    "group": "LLM Platforms & Foundations",
+    "items": [
+      "OpenAI API",
+      "ChatGPT Platform",
+      "OpenAI Codex",
+      "Ollama",
+      "Open-source LLMs (local and hosted inference)"
+    ]
+  },
+  {
+    "group": "Agentic AI & Multi-Agent Systems",
+    "items": [
+      "Agent-based workflow design",
+      "Multi-agent orchestration and coordination",
+      "Tool calling and function execution",
+      "Autonomous task planning and execution"
+    ]
+  },
+  {
+    "group": "Retrieval-Augmented Generation (RAG)",
+    "items": [
+      "RAG architecture design",
+      "Embedding pipelines and vector search",
+      "Document ingestion, chunking, and indexing",
+      "Relevance tuning and response evaluation"
+    ]
+  },
+  {
+    "group": "AI Engineering Reliability",
+    "items": [
+      "Observability and logging for AI systems",
+      "Latency, cost, and token optimization",
+      "Secure secret and key management",
+      "Production rollout and rollback strategies"
+    ]
+  }
+]
