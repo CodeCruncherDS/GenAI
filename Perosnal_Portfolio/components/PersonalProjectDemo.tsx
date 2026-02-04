@@ -29,25 +29,16 @@ export default function PersonalProjectDemo({
   config: DemoConfigMap;
   fallbackMessage: string;
 }) {
-  const Component = useMemo(() => {
-    if (demo === "signal-meter") {
-      return SignalMeter;
-    }
-    if (demo === "decision-timer") {
-      return DecisionTimer;
-    }
-    return null;
-  }, [demo]);
-
-  if (!Component) {
-    return (
-      <div className="rounded-2xl border border-sand-200 bg-sand-100 p-6 text-sm text-ink-600">
-        {fallbackMessage}
-      </div>
-    );
+  if (demo === "signal-meter") {
+    return <SignalMeter config={config["signal-meter"]} />;
   }
 
-  return <Component config={config[demo as DemoKey]} />;
+  if (demo === "decision-timer") {
+    // @ts-ignore - The types match but TS is being strict about the union
+    return <DecisionTimer config={config["decision-timer"]} />;
+  }
+
+  return null;
 }
 
 function SignalMeter({ config }: { config: DemoConfigMap["signal-meter"] }) {
@@ -100,9 +91,8 @@ function DecisionTimer({ config }: { config: DemoConfigMap["decision-timer"] }) 
             type="button"
             key={value}
             onClick={() => setSeconds(value)}
-            className={`rounded-xl border px-3 py-2 font-semibold transition ${
-              seconds === value ? "border-accent-500 bg-accent-500 text-white" : "border-sand-200 bg-sand-50"
-            }`}
+            className={`rounded-xl border px-3 py-2 font-semibold transition ${seconds === value ? "border-accent-500 bg-accent-500 text-white" : "border-sand-200 bg-sand-50"
+              }`}
           >
             {value}s
           </button>
