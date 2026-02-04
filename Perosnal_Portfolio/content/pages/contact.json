@@ -1,9 +1,9 @@
 {
   "title": "Contact",
   "intro": "Available for AI engineering leadership, MLOps architecture, and consulting engagements.",
-  "emailLabel": "deveshsingh226@gmail.com",
-  "githubLabel": "https://github.com/CodeCruncherDS",
-  "linkedinLabel": "https://www.linkedin.com/in/iamdeveshsingh/",
+  "emailLabel": "Email",
+  "githubLabel": "GitHub",
+  "linkedinLabel": "LinkedIn",
   "formTitle": "Let's have a conversation!",
   "formDescription": "Direct server-side message handling. No persistence. Logged for response tracking.",
   "submitLabel": "Send",
